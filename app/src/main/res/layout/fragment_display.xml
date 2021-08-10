@@ -15,7 +15,7 @@
         android:id="@+id/rv_person_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="10dp"
+        android:padding="@dimen/normal_padding"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:personData="@{viewModel.personList}"
         tools:listitem="@layout/person_item" />
