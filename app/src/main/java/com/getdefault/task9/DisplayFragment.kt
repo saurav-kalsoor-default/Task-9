@@ -32,7 +32,7 @@ class DisplayFragment : Fragment() {
     }
 
     private fun callPerson(phone : String){
-        val callIntent = Intent(Intent.ACTION_CALL)
+        val callIntent = Intent(Intent.ACTION_DIAL)
         callIntent.data = Uri.parse("tel:$phone")
         startActivity(callIntent)
     }
